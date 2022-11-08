@@ -36,7 +36,7 @@ public class UserResource {
     }
     @PostMapping("/users/role")
     public ResponseEntity<?> addRoleToUser(@RequestBody RoleUserDto roleUserDto) {
-        userService.addRoleToUser(roleUserDto.getRoleName(), roleUserDto.getUserName());
+        userService.addRoleToUser(roleUserDto.getRoleName(), roleUserDto.getUsername());
         return ResponseEntity.ok().build();
     }
 
