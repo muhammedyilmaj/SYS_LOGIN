@@ -9,5 +9,5 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RoleUserDto {
     private String roleName;
-    private String userName;
+    private String username;
 }
